@@ -30,7 +30,7 @@ def menu():
                 ydl_opts = {}
                 with youtube_dl.YoutubeDL(options1) as ydl:
                     wir = str(input("Input url : ")) #user memasukan url dari yt
-                    ydl.download(colored([wir], 'magenta', attrs=['bold']))     
+                    ydl.download([wir])     
                     ulang()
                     
     elif user_input == "2":
